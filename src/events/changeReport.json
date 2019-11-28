@@ -1,0 +1,36 @@
+{
+  "event": {
+    "header": {
+      "messageId": "abc-123-def-456",
+      "namespace": "Alexa",
+      "name": "ChangeReport",
+      "payloadVersion": "3"
+    },
+    "endpoint": {
+      "scope": {
+        "type": "BearerToken",
+        "token": "access-token-from-Amazon"
+      },
+      "endpointId": "232342323dd"
+    },
+    "payload": {
+      "change": {
+        "cause": {
+          "type": "PHYSICAL_INTERACTION"
+        },
+        "properties": [
+          {
+            "namespace": "Alexa.PowerController",
+            "name": "powerState",
+            "value": "OFF",
+            "timeOfSample": "2019-11-26T15:45:50.392Z",
+            "uncertaintyInMilliseconds": 0
+          }
+        ]
+      }
+    }
+  },
+  "context": {
+    "properties": []
+  }
+}

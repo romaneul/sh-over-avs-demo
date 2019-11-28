@@ -1,0 +1,51 @@
+{
+  "event": {
+    "header": {
+      "namespace": "Alexa.Discovery",
+      "name": "AddOrUpdateReport",
+      "messageId": "<uuid>",
+      "eventCorrelationToken": "xxxxxx",
+      "payloadVersion": "3"
+    },
+    "payload": {
+      "endpoints": [
+        {
+          "friendlyName": "Living Room",
+          "description": "Simple Smart Light connected via AVS SH Gateway",
+          "endpointId": "1",
+          "manufacturerName": "Amazon",
+          "modelName": "EVT",
+          "cookie": {
+            "key": "value"
+          },
+          "displayCategories": ["LIGHT"],
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "powerState"
+                  }
+                ],
+                "proactivelyReported": true,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa",
+              "version": "3"
+            }
+          ]
+        }
+      ],
+      "scope": {
+        "type": "BearerToken",
+        "token": "access-token-from-Amazon"
+      }
+    }
+  }
+}

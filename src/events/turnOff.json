@@ -1,0 +1,30 @@
+{
+  "event": {
+    "header": {
+      "namespace": "Alexa",
+      "name": "Response",
+      "messageId": "<message id>",
+      "correlationToken": "<an opaque correlation token>",
+      "payloadVersion": "3"
+    },
+    "endpoint": {
+      "scope": {
+        "type": "BearerToken",
+        "token": "<an OAuth2 bearer token>"
+      },
+      "endpointId": "<endpoint id>"
+    },
+    "payload": {}
+  },
+  "context": {
+    "properties": [
+      {
+        "namespace": "Alexa.PowerController",
+        "name": "powerState",
+        "value": "OFF",
+        "timeOfSample": "2019-11-25T22:14:47.303Z",
+        "uncertaintyInMilliseconds": 0
+      }
+    ]
+  }
+}

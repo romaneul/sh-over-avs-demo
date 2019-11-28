@@ -1,0 +1,31 @@
+{
+  "event": {
+    "header": {
+      "messageId": "abc-123-def-456",
+      "correlationToken": "abcdef-123456",
+      "namespace": "Alexa",
+      "name": "StateReport",
+      "payloadVersion": "3"
+    },
+    "endpoint": {
+      "scope": {
+        "type": "BearerToken",
+        "token": "access-token-from-Amazon"
+      },
+      "endpointId": "appliance-001",
+      "cookie": {}
+    },
+    "payload": {}
+  },
+  "context": {
+    "properties": [
+      {
+        "namespace": "Alexa.PowerController",
+        "name": "powerState",
+        "value": "ON",
+        "timeOfSample": "2019-11-25T22:14:47.303Z",
+        "uncertaintyInMilliseconds": 0
+      }
+    ]
+  }
+}
