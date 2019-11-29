@@ -1,20 +1,20 @@
-# Prerquisetes:
+# Prerequisites:
 
 - Node v12.11 (node -v)
 - Alexa Mobile App (iOS or Android)
 - Amazon developer account
 
-# Create AVS Device
+# Create your AVS Device
 
 - Go to  https://developer.amazon.com/alexa/console/avs/products/new 
 - In Step 1/2: 
-  - Select "Applicaton with Alexa built-in"
+  - Select "Application with Alexa built-in"
   - Fill out all mandatory fields
 - In Step 2/2:
   - Create a new Security Profile
   - Add http://localhost:8080/callback to the `Allowed return URLs`
 
-# Configure AVS Client
+# Configure the AVS Client
 
 1. Run `git clone https://github.com/romaneul/sh-over-avs-demo.git`
 2. `cd sh-over-avs-demo`
