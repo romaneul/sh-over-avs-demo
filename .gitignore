@@ -1,5 +1,4 @@
 node_modules
 .token
-.env
 .DS_Store
 package-lock.json
