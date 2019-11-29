@@ -1,39 +1,41 @@
 # Prerquisetes:
 
-1. Node v12.11 (node -v)
-2. Alexa Mobile App (iOS or Android)
-3. Amazon developer account
+- Node v12.11 (node -v)
+- Alexa Mobile App (iOS or Android)
+- Amazon developer account
 
 # Create AVS Device
 
-1. https://developer.amazon.com/alexa/console/avs/products/new
-
-- Step 1: Fill out all mandatory fields; Note down the Product ID
-- Step 2:
+- Go to  https://developer.amazon.com/alexa/console/avs/products/new & 
+- In Step 1/2: 
+  - Select "Applicaton with Alexa built-in
+  - Fill out all mandatory fields
+- In Step 2/2:
   - Create a new Security Profile
   - Add http://localhost:8080/callback to Allowed return URLs
 
 # Configure AVS Client
 
-1. git clone https://github.com/romaneul/sh-over-avs.git
-2. cd sh-over-avs
-3. npm install
-4. touch .env. Enter the following
-
-   LWA_CLIENT_ID=amzn1.application-oa2-client.202f36b586644824be13f61d9520a602
-   LWA_CLIENT_SECRET=c69f4043928c433b513c3c0426b34d4c5abb2fe6954bb0f58e884c3281fe3dab
+1. `git clone https://github.com/romaneul/sh-over-avs-demo.git`
+2. `cd sh-over-avs-demo`
+3. `npm install`
+4. Update the `.env` file:
+   ```
+   LWA_CLIENT_ID=<LWA Client ID from your Security Profile>
+   LWA_CLIENT_SECRET=<LWA Client Secret from your Security Profile>
    LWA_SCOPE="alexa:all"
    LWA_REDIRECT_PORT=8080
-   AVS_PRODUCT_ID=123456
+   AVS_PRODUCT_ID=<Your AVS Product ID>
    AVS_ENDPOINT=https://alexa.eu.gateway.devices.a2z.com
-
-5. node bin/login.js
-   - Login with your Amazon account (use same account in the Alexa app)
+   ```
+5. Run `node bin/login.js`
+   - Login with your Amazon account (use the same account in the Alexa app)
 6. node bin/avs-sh-gateway.js
 
-# Exercises
 
-- discover device
+
+# Explore the AVS SH Client
+- Run a Proactive Discovery 
 - Control device via voice
 - Control device via app
 - view change state report
