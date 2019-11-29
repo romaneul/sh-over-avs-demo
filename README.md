@@ -12,7 +12,7 @@
   - Fill out all mandatory fields
 - In Step 2/2:
   - Create a new Security Profile
-  - Add http://localhost:8080/callback to the `Allowed return URLs`
+  - Add `http://localhost:8080/callback` to the `Allowed return URLs`
 
 # Configure the AVS Client
 
