@@ -31,7 +31,7 @@
    AVS_ENDPOINT=<Select appropriate endpoint from the link below; e.g. https://alexa.eu.gateway.devices.a2z.com>
    ```
    **Select the appropriate `AVS_ENDPOINT` from [here](https://developer.amazon.com/docs/alexa-voice-service/api-overview.html#endpoints).**
-5. Run `node bin/login.js`
+5. Run `npm run login`
    - Login with your Amazon account (use the same account in the Alexa app)
 
 
@@ -44,7 +44,7 @@
 
 
 2. Discover and Control a Light device [5 Minutes]
-- Run `node bin/avs-sh-gateway.js` to start the AVS SH Client
+- Run `npm run client` to start the AVS SH Client
 - Run a Proactive Discovery - this will send the Event `events/discovery.json`
 - Control device via voice: "Alexa, turn on living room"
 - Control device via app
