@@ -1,5 +1,5 @@
 const fs = require("fs").promises;
-const uuidv4 = require("uuid/v4");
+const { v4: uuidv4 } = require('uuid');
 const chalk = require("chalk");
 
 const eventFolder = "events";

@@ -14,14 +14,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^18.3.2",
-    "axios": "^0.19.0",
-    "boxen": "^4.0.0",
-    "chalk": "^2.4.2",
-    "dotenv": "^8.0.0",
-    "inquirer": "^7.0.0",
-    "open": "^6.3.0",
-    "uuid": "^3.3.3",
-    "yargs": "^13.2.4"
+    "@hapi/hapi": "^20.1.5",
+    "axios": "^0.21.1",
+    "boxen": "^5.0.1",
+    "chalk": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "inquirer": "^8.1.2",
+    "open": "^8.2.1",
+    "uuid": "^8.3.2",
+    "yargs": "^17.0.1"
   }
 }
